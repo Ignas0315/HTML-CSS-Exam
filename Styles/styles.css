@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+}
+
 .nav-bar {
     margin: 0 auto;
+    margin-top: 1rem;
     display: flex;
     height: 3rem;
     background-color: white;
@@ -14,6 +19,11 @@
     justify-content: space-between;
     padding: 1.5rem;
     margin-bottom: 3rem;
+    align-items: center;
+}
+
+.nav-logo-container img {
+    width: 100%;
 }
 
 .menu {
@@ -21,21 +31,84 @@
 }
 
 .hamburger {
-    margin-top: 0.5rem;
     height: 2rem;
     width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 .hamburger .burger-bar {
-    display: block;
+    margin: 0 auto;
     margin-bottom: 0.25rem;
-    height: 0.3rem;
-    width: 1.5rem;
+    height: 0.25rem;
+    width: 1.7rem;
     background-color: rgb(160, 160, 160);
     border-radius: 8px;
 }
 
+.hamburger .burger-bar:last-of-type {
+    margin-bottom: 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    position:relative;
+    margin-top: 15rem;
+    max-width: 26.75rem;
+    padding: 1.5rem;
+    margin-bottom: 10rem;
+}
+
+.hero-content {
+    align-items: center;
+    position: absolute;
+    max-width: 18rem;
+    top: -200px;
+}
+
+.hero-img-container {
+    width: 20%;
+    max-width: 25rem;
+    position: absolute;
+    height: auto;
+    margin: 0 auto;
+    top: -65px;
+    right: 0.5rem;
+}
+
+.hero-content h4 {
+    color: rgb(223, 12, 82);
+    font-weight:600;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 16px;
+}
+
+.hero-content p {
+    max-width: 232px;
+    letter-spacing: 0.1px;
+    line-height: 1.25em;
+}
+
+.hero-img-container img {
+    width: 20rem;
+}
+
 .open-door-logo {
     display: none;
+}
+
+.free-nft-container {
+    background-image: url("./../Assets/assets/background.svg");
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
