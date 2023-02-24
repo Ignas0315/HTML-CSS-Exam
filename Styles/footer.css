@@ -1,0 +1,39 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.footer-logo { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+
+.footer-text { 
+    grid-area: 2 / 1 / 3 / 3; 
+}
+
+.footer-social-logos { 
+    grid-area: 3 / 1 / 4 / 3; 
+}
+
+.footer-about { 
+    grid-area: 4 / 1 / 5 / 2; 
+}
+
+.footer-nft { 
+    grid-area: 4 / 2 / 5 / 3; 
+}
+
+.footer-contact { 
+    grid-area: 5 / 1 / 6 / 2; 
+}
+
+.footer-socials { 
+    grid-area: 5 / 2 / 6 / 3; 
+}
+
+.footer-copyright { 
+    grid-area: 6 / 1 / 7 / 3; 
+}
