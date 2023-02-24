@@ -9,6 +9,12 @@ body {
     height: 100%;
 }
 
+.container {
+    margin: 0 auto;
+    min-width: 20rem;
+    max-width: 26.25rem;
+}
+
 .nav-bar {
     margin: 0 auto;
     margin-top: 1rem;
@@ -20,8 +26,7 @@ body {
     padding: 1.5rem;
     margin-bottom: 3rem;
     align-items: center;
-    min-width: 360px;
-    width: 428px;
+    min-width: 320px;
 }
 
 .nav-logo-container img {
@@ -38,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 4rem;
+    padding-right: 3rem;
 }
 
 .hamburger .burger-bar {
@@ -56,29 +61,30 @@ body {
 
 .hero-container {
     display: flex;
+    position: relative;
     align-items: center;
-    position:relative;
-    margin-top: 15rem;
-    max-width: 26.75rem;
-    padding: 1.5rem;
-    margin-bottom: 10rem;
+    overflow: hidden;
+    margin-top: -3.75rem;
+    margin-left: 1.5rem;
+    margin-bottom: -8rem;
+    min-width: 320px;
 }
 
 .hero-content {
     align-items: center;
     position: absolute;
     max-width: 18rem;
-    top: -200px;
+    
 }
 
 .hero-img-container {
     width: 20%;
-    max-width: 25rem;
-    position: absolute;
+    max-width: 400px;
     height: auto;
-    margin: 0 auto;
-    top: -65px;
-    right: 2rem;
+    margin-left: auto;
+    margin-right: 100px;
+    padding-bottom: 100px;
+
 }
 
 .hero-content h4 {
@@ -86,6 +92,7 @@ body {
     font-weight:600;
     text-transform: uppercase;
     padding-bottom: 2rem;
+    min-width: 350px;
 }
 
 .hero-content h1 {
@@ -96,7 +103,13 @@ body {
 
 .hero-button {
     margin-top: 2rem;
-    background-color: white;
+}
+
+.separator {
+    height:1px;
+    background-color: #797979;
+     opacity: 50%;
+     margin-top: 2rem;
 }
 
 .hero-button button {
@@ -131,9 +144,167 @@ body {
     display: none;
 }
 
-.free-nft-container {
-    background-image: url("./../Assets/assets/background.svg");
-    padding: 2rem;
-    border-radius: 1rem;
+.free-nft {
+    margin-top: 150px;
+    min-width: 300px;
 }
+
+.free-nft-container {
+    margin:0 auto;
+    display: block;
+    padding: 1.5rem;
+    box-sizing:content-box;
+    height: 10rem;
+    background-image: linear-gradient(65deg,rgba(252,116,124, 0.899)1%, #ff6c64 40% , #f4745c 65%, rgba(116, 255, 52, 0.497)100%);
+    padding-bottom: 3rem;
+    }
+
+.free-nft-text {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.free-nft-text h4 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.free-nft-text p {
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+.companies {
+    min-width: 320px;
+    max-width: 428px;
+}
+
+.companies-container {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-top: 45px;
+  max-width: 392px;
+}
+
+.companies-container img {
+    max-width: 8rem;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.auction {
+    padding: 1.5rem;
+  }
+
+.auction-text-container{
+    width: 90%;
+}
+
+.auction-text-container h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+}
+
+.auction-text-container p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #797979;
+    line-height: 1.5rem;
+  }
+
+.auction-text-container p span a {
+    color:#666565
+}
+
+.auction .cards {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: hidden;
+  }
+
+.inner-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 6px;
+    padding: 1rem 1.5rem 1rem 1.5rem
+    }
+
+.card-series { grid-area: 1 / 1 / 2 / 2;text-align: left; color:rgb(247, 132, 38); font-size: 14px; }
+.card-current-bid { grid-area: 1 / 2 / 2 / 3;
+text-align: right; font-size: 14px;}
+.card-name { grid-area: 2 / 1 / 3 / 2; text-align: left;font-size: 18px; font-weight: 500;}
+.card-price { grid-area: 2 / 2 / 3 / 3;text-align: right;font-size: 18px; font-weight: 500;}
+.card-price img {
+    vertical-align: middle;
+}
+.card-number { grid-area: 3 / 1 / 4 / 2; }
+.card-days-left { grid-area: 3 / 2 / 4 / 3; text-align: right;}   
+
+  .card-1, .card-2, .card-3, .card-4 {
+        width: 290px;
+        height: 400px;
+        background: #d4d4d4;
+        border-radius: 16px;
+  }
+
+  .img-footer-container {
+    width: 15%;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: 7rem;
+    padding-bottom: 100px;
+    margin-top: 8rem;
+  }
+
+  .launch-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    margin-bottom: -3rem;
+    min-width: 320px;
+    gap: 8px;
+}
+
+.launch-content {
+    align-items: center;
+    position: absolute;
+    max-width: 14rem;
+    top: 3rem;
+    
+}
+
+.launch-content h4 {
+    color: #ff4f7e;
+    font-weight:600;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+.launch-content h1 {
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 1rem;
+}
+
+.launch-content p {
+    font-size: 16px;
+    max-width: 13.5rem;
+    line-height: 1.75em;
+}
+
+
 
