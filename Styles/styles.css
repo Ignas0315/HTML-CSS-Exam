@@ -20,6 +20,8 @@ body {
     padding: 1.5rem;
     margin-bottom: 3rem;
     align-items: center;
+    min-width: 360px;
+    width: 428px;
 }
 
 .nav-logo-container img {
@@ -32,11 +34,11 @@ body {
 
 .hamburger {
     height: 2rem;
-    width: 2rem;
+    width: 1%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     flex-direction: column;
+    margin-right: 4rem;
 }
 
 .hamburger .burger-bar {
@@ -76,14 +78,14 @@ body {
     height: auto;
     margin: 0 auto;
     top: -65px;
-    right: 0.5rem;
+    right: 2rem;
 }
 
 .hero-content h4 {
-    color: rgb(223, 12, 82);
+    color: #ff4f7e;
     font-weight:600;
     text-transform: uppercase;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .hero-content h1 {
@@ -92,6 +94,29 @@ body {
     padding-bottom: 16px;
 }
 
+.hero-button {
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.hero-button button {
+    border-radius: 4rem;
+    cursor: pointer;
+    width: 10rem;
+    font-size: 1rem;
+    padding: .75rem 1.5rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(26deg, #ff4f7e,#f82c63, #f38943, #c9dd7e);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+  }
+
+  .button-label {
+    font-weight: bold;
+  }
 .hero-content p {
     max-width: 232px;
     letter-spacing: 0.1px;
