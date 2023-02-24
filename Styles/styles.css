@@ -321,6 +321,7 @@ text-align: right; font-size: 14px;}
     grid-column-gap: 0px;
     grid-row-gap: 16px;
     width: 70%;
+    padding-left: 1.5rem;
     }
 
     .footer-grid h6 {
@@ -383,12 +384,14 @@ text-align: right; font-size: 14px;}
     justify-content: center;
     width: 70%;
     margin-bottom: 2rem;
+    padding-left: 1.5rem;
 
 }
 
 .footer-copyright {
     color: #aaaaaa;
     margin-bottom: 1rem;
+    padding-left: 1.5rem;
 }
 
 
