@@ -34,3 +34,8 @@
     background-color: rgb(160, 160, 160);
     border-radius: 8px;
 }
+
+.open-door-logo {
+    display: none;
+}
+
