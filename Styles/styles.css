@@ -279,7 +279,7 @@ text-align: right; font-size: 14px;}
     margin-left: auto;
     margin-right: 7rem;
     padding-bottom: 100px;
-    margin-top: 8rem;
+    margin-top: 11.5rem;
   }
 
   .launch-container {
@@ -628,8 +628,8 @@ text-align: right; font-size: 14px;}
 
     .card-series { font-size: 10px;vertical-align: middle; }
     .card-current-bid {  font-size: 10px;vertical-align: middle;}
-    .card-name {font-size: 12px;vertical-align: middle;}
-    .card-price {font-size: 12px; font-weight: 500;vertical-align: middle;}
+    .card-name {font-size: 12px;vertical-align: middle;white-space: nowrap;}
+    .card-price {font-size: 12px; font-weight: 500;vertical-align: middle;white-space: nowrap;}
     .card-price img {
     vertical-align: middle;
     }
@@ -697,6 +697,7 @@ text-align: right; font-size: 14px;}
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    z-index: 1;
     }
 
     .footer-about { grid-area: 1 / 1 / 2 / 2; }
