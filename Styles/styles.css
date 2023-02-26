@@ -30,7 +30,7 @@ body {
 }
 
 .nav-logo-container img {
-    width: 100%;
+    width: 90%;
 }
 
 .menu {
@@ -38,12 +38,11 @@ body {
 }
 
 .hamburger {
-    height: 2rem;
     width: 1%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 
 .hamburger .burger-bar {
@@ -199,11 +198,12 @@ body {
 }
 
 .auction {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
 
 .auction-text-container{
     width: 90%;
+    padding: 1.5rem;
 }
 
 .auction-text-container h2 {
@@ -226,6 +226,7 @@ body {
 }
 
 .auction .cards {
+    padding-left: 1.5rem;
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
@@ -395,4 +396,85 @@ text-align: right; font-size: 14px;}
 }
 
 
+@media screen and (min-width: 428px) {
+    .container {
+        min-width: 428px;
+        max-width: none;
+        padding: 2rem;
+    }
 
+    .nav-bar {
+        margin: 0 auto;
+        margin-top: 1rem;
+        display: flex;
+        height: 3rem;
+        background-color: white;
+        color: rgb(163, 163, 163);
+        justify-content: space-between;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+        margin-bottom: 3rem;
+        align-items: center;
+        min-width: 320px;
+    }
+
+    .nav-logo-container img {
+        width: 80%;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        font-size: 12px;
+    }
+
+    nav li {
+        margin-right: 8px;
+        white-space:nowrap;
+    }
+
+    nav li:last-child {
+        margin-right: 0;
+    }
+
+    .menu nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .menu nav ul li a:hover {
+        color: rgb(145, 145, 145);
+    }
+
+    .menu nav ul li:last-child a {
+        margin-right: 0;
+        color: #ffa5bd;
+    }
+
+    .menu nav ul li:last-child a:hover {
+        color: #ff0000;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    nav ul {
+        font-size: 1rem;
+    }
+    nav li {
+        margin-right: 1rem;
+    }
+
+    nav li:last-of-type {
+        margin-right: 0;
+    }
+
+}
