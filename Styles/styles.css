@@ -245,7 +245,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 6px;
-    padding: 1rem 1.5rem 1rem 1.5rem
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    align-items: center;
     }
 
 .card-series { grid-area: 1 / 1 / 2 / 2;text-align: left; color:rgb(247, 132, 38); font-size: 14px; }
@@ -268,7 +269,7 @@ text-align: right; font-size: 14px;}
 
 /* Launch section */
 
-  .img-footer-container {
+  .img-launch-container {
     width: 15%;
     max-width: 380px;
     margin-left: auto;
@@ -501,10 +502,14 @@ text-align: right; font-size: 14px;}
         margin-right: 0;
     }
 
+    .auction-text-container p {
+        white-space: nowrap;
+        }
+
     .hero-content {
         align-items: center;
         position: absolute;
-        max-width: 45%;
+        max-width: 47%;
     }
 
     .hero-img-container {
@@ -523,8 +528,10 @@ text-align: right; font-size: 14px;}
 
     .hero-content h1 {
         padding-bottom: 32px;
-        max-width: 18rem;
+        max-width: 20rem;
         line-height: 1.25em;
+        font-size: 3.5rem;
+        font-weight: bold;
     }
 
     .hero-content p {
@@ -564,5 +571,157 @@ text-align: right; font-size: 14px;}
     .auction .cards {
         margin-top: 3rem;
         padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .card-1, .card-2, .card-3, .card-4 {
+        display: block;
+        width: 25%;
+        height: 100%;
+        border-radius: 1rem;
+
+    }
+
+    .card-1 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-3 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-4 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-price img {
+        display: inline;
+        height: auto;
+        width: 6px;
+        margin: 0;
+    }
+
+    .card-series { font-size: 10px;vertical-align: middle; }
+    .card-current-bid {  font-size: 10px;vertical-align: middle;}
+    .card-name {font-size: 12px;vertical-align: middle;}
+    .card-price {font-size: 12px; font-weight: 500;vertical-align: middle;}
+    .card-price img {
+    vertical-align: middle;
+    }
+    .card-number {font-size: 10px;vertical-align: middle;}
+    .card-days-left { font-size: 10px;vertical-align: middle;}
+    .inner-card-container {
+        padding: 0.5rem;
+    }
+
+    .launch-container {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .launch-content {
+    padding-top: 2rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+    .launch-content h4 {
+        margin-top: 4rem;
+    }
+
+    .launch-content h1 {
+        max-width: 32rem;
+    }
+
+    .launch-content p {
+        max-width: 28rem;
+    }
+
+    .launch-content {
+        max-width: 36rem;
+    }
+
+    .img-launch-container {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin-right: 8%;
+        width: 20%;
+        align-items: center;
+        padding-bottom: 103px;
+        max-width: none;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+    .card-price img {
+        display: inline;
+        height: auto;
+        width: 12px;
+        margin: 0;
+    }
+
+    .card-series { font-size: 12px; }
+    .card-current-bid {  font-size: 12px;}
+    .card-name {font-size: 16px;vertical-align: middle;}
+    .card-price {font-size: 16px;}
+    .card-number {font-size: 16px;}
+    .card-days-left { font-size: 16px;}
+    .inner-card-container {
+        padding: 1rem;
+    }
+
+    .img-launch-container {
+        margin-right: 15%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .card-price img {
+        display: inline;
+        height: auto;
+        width: 16px;
+        margin: 0;
+    }
+
+    .card-series { font-size: 14px;vertical-align: middle; }
+    .card-current-bid {  font-size: 14px;vertical-align: middle;}
+    .card-name {font-size: 18px;vertical-align: middle;white-space: nowrap;}
+    .card-price {font-size: 18px; font-weight: 500;vertical-align: middle;}
+    .card-price img {
+    vertical-align: middle;
+    }
+    .card-number {font-size: 18px;vertical-align: middle;}
+    .card-days-left { font-size: 18px;vertical-align: middle;}
+    .inner-card-container {
+        padding: 1rem;
+    }
+
+    .img-launch-container {
+        margin-right: 18%;
+    }
+}
+
+@media screen and (min-width: 1152px){
+    .inner-card-container {
+        padding: 1.5rem 1rem 1.5rem 1rem;
     }
 }
