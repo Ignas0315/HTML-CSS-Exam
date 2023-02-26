@@ -1,3 +1,4 @@
+/* General settings */
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -15,6 +16,8 @@ body {
     max-width: 26.25rem;
 }
 
+/* Header */
+
 .nav-bar {
     margin: 0 auto;
     margin-top: 1rem;
@@ -31,6 +34,7 @@ body {
 
 .nav-logo-container img {
     width: 90%;
+    vertical-align: middle;
 }
 
 .menu {
@@ -57,6 +61,8 @@ body {
 .hamburger .burger-bar:last-of-type {
     margin-bottom: 0;
 }
+
+/* Hero */
 
 .hero-container {
     display: flex;
@@ -104,13 +110,6 @@ body {
     margin-top: 2rem;
 }
 
-.separator {
-    height:1px;
-    background-color: #797979;
-     opacity: 50%;
-     margin-top: 2rem;
-}
-
 .hero-button button {
     border-radius: 4rem;
     cursor: pointer;
@@ -126,9 +125,10 @@ body {
     box-shadow: 2px 1000px 1px #fff inset;
   }
 
-  .button-label {
+.button-label {
     font-weight: bold;
   }
+
 .hero-content p {
     max-width: 232px;
     letter-spacing: 0.1px;
@@ -139,9 +139,7 @@ body {
     width: 20rem;
 }
 
-.open-door-logo {
-    display: none;
-}
+/* Free NFT section */
 
 .free-nft {
     margin-top: 150px;
@@ -156,10 +154,12 @@ body {
     height: 10rem;
     background-image: linear-gradient(65deg,rgba(252,116,124, 0.899)1%, #ff6c64 40% , #f4745c 65%, rgba(116, 255, 52, 0.497)100%);
     padding-bottom: 3rem;
+    position: relative;
     }
 
 .free-nft-text {
-    margin-top: 3rem;
+    position: absolute;
+    bottom: 2rem;
     width: 80%;
 }
 
@@ -172,6 +172,8 @@ body {
     letter-spacing: 0.5px;
     line-height: 1.5rem;
 }
+
+/* Companies section */
 
 .companies {
     min-width: 320px;
@@ -190,6 +192,10 @@ body {
   max-width: 392px;
 }
 
+.open-door-logo {
+    display: none;
+}
+
 .companies-container img {
     max-width: 8rem;
     padding: 1.5rem 1.5rem 1.5rem 0;
@@ -197,13 +203,14 @@ body {
     padding-right: 0;
 }
 
+/* Auction section */
+
 .auction {
-    /* padding: 1.5rem; */
+    padding: 1.5rem;
   }
 
 .auction-text-container{
     width: 90%;
-    padding: 1.5rem;
 }
 
 .auction-text-container h2 {
@@ -226,7 +233,6 @@ body {
 }
 
 .auction .cards {
-    padding-left: 1.5rem;
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
@@ -255,10 +261,12 @@ text-align: right; font-size: 14px;}
 
   .card-1, .card-2, .card-3, .card-4 {
         width: 290px;
-        height: 400px;
+        height: 25rem;
         background: #d4d4d4;
-        border-radius: 16px;
+        border-radius: 1rem;
   }
+
+/* Launch section */
 
   .img-footer-container {
     width: 15%;
@@ -315,6 +323,8 @@ text-align: right; font-size: 14px;}
     margin-bottom: 3rem;
 }
 
+/* Footer */
+
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -350,27 +360,14 @@ text-align: right; font-size: 14px;}
         width: 50%;
     }
 
-    .fa-tiktok{
+    .footer-social-logos * {
         vertical-align: middle;
-        color: #797979;
+        color: #797979; 
+        margin-right: 12px;
     }
 
-    .fa-facebook{
-        vertical-align: middle;
-        color: #797979;
-        margin-right: 8px;
-    }
-
-    .fa-twitter{
-        vertical-align: middle;
-        color: #797979;
-        margin-right: 8px;
-    }
-
-    .fa-instagram{
-        vertical-align: middle;
-        color: #797979;
-        margin-right: 8px;
+    .footer-social-logos i:last-of-type {
+        margin-right: 0;
     }
 
 .footer-flex {
@@ -395,8 +392,26 @@ text-align: right; font-size: 14px;}
     padding-left: 1.5rem;
 }
 
+/* Other/test styles */
+
+.separator {
+    height:1px;
+    background-color: #797979;
+    opacity: 50%;
+    margin-top: 2rem;
+}
+
+.separator2 {
+    height:1px;
+    background-color: #797979;
+    opacity: 50%;
+    margin-top: -6.5rem;
+    margin-bottom: 3rem;
+}
+
 
 @media screen and (min-width: 428px) {
+
     .container {
         min-width: 428px;
         max-width: none;
@@ -428,7 +443,7 @@ text-align: right; font-size: 14px;}
     nav ul {
         display: flex;
         list-style: none;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     nav li {
@@ -452,7 +467,7 @@ text-align: right; font-size: 14px;}
 
     .menu nav ul li:last-child a {
         margin-right: 0;
-        color: #ffa5bd;
+        color: #ff7a9e;
     }
 
     .menu nav ul li:last-child a:hover {
@@ -462,6 +477,10 @@ text-align: right; font-size: 14px;}
     .hamburger {
         display: none;
     }
+
+    .free-nft-container {
+        border-radius: 1rem;
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -469,12 +488,81 @@ text-align: right; font-size: 14px;}
     nav ul {
         font-size: 1rem;
     }
+
     nav li {
         margin-right: 1rem;
+    }
+
+    .nav-logo-container img {
+        width: 90%;
     }
 
     nav li:last-of-type {
         margin-right: 0;
     }
 
+    .hero-content {
+        align-items: center;
+        position: absolute;
+        max-width: 45%;
+    }
+
+    .hero-img-container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 128px;
+        margin-right: 11rem;
+        max-width: 300px;
+    }
+
+    .hero-img-container img {
+        width: 28rem
+    }
+    
+
+    .hero-content h1 {
+        padding-bottom: 32px;
+        max-width: 18rem;
+        line-height: 1.25em;
+    }
+
+    .hero-content p {
+        max-width: 30rem;
+        letter-spacing: 0.1px;
+        line-height: 1.5em;
+        padding-bottom: 2rem;
+    }
+
+    .open-door-logo {
+        display: block;
+        }
+
+    .companies-container {
+        max-width: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        }
+        
+    .companies {
+        min-width: 320px;
+        max-width: none;
+    }  
+            
+    .companies-container img {
+        padding: 1%;
+        }
+
+    .footer-logo {
+        width: 25%;
+    }
+
+    .auction .cards {
+        margin-top: 3rem;
+        padding-right: 0;
+    }
 }
