@@ -79,7 +79,6 @@ body {
     align-items: center;
     position: absolute;
     max-width: 18rem;
-    
 }
 
 .hero-img-container {
@@ -89,12 +88,11 @@ body {
     margin-left: auto;
     margin-right: 100px;
     padding-bottom: 100px;
-
 }
 
 .hero-content h4 {
     color: #ff4f7e;
-    font-weight:600;
+    font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 2rem;
     min-width: 350px;
@@ -115,19 +113,20 @@ body {
     cursor: pointer;
     width: 10rem;
     font-size: 1rem;
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     color: black;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(26deg, #ff4f7e,#f82c63, #f38943, #c9dd7e);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(26deg, #ff4f7e, #f82c63, #f38943, #c9dd7e);
     background-origin: border-box;
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px #fff inset;
-  }
+}
 
 .button-label {
     font-weight: bold;
-  }
+}
 
 .hero-content p {
     max-width: 232px;
@@ -147,15 +146,21 @@ body {
 }
 
 .free-nft-container {
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     padding: 1.5rem;
-    box-sizing:content-box;
+    box-sizing: content-box;
     height: 10rem;
-    background-image: linear-gradient(65deg,rgba(252,116,124, 0.899)1%, #ff6c64 40% , #f4745c 65%, rgba(116, 255, 52, 0.497)100%);
+    background-image: linear-gradient(
+        65deg,
+        rgba(252, 116, 124, 0.899) 1%,
+        #ff6c64 40%,
+        #f4745c 65%,
+        rgba(116, 255, 52, 0.497) 100%
+    );
     padding-bottom: 3rem;
     position: relative;
-    }
+}
 
 .free-nft-text {
     position: absolute;
@@ -181,15 +186,15 @@ body {
 }
 
 .companies-container {
-  width: 100%;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding-top: 45px;
-  max-width: 392px;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-top: 45px;
+    max-width: 392px;
 }
 
 .open-door-logo {
@@ -207,9 +212,9 @@ body {
 
 .auction {
     padding: 1.5rem;
-  }
+}
 
-.auction-text-container{
+.auction-text-container {
     width: 90%;
 }
 
@@ -226,14 +231,14 @@ body {
     font-size: 1rem;
     color: #797979;
     line-height: 1.5rem;
-  }
+}
 
 .auction-text-container p span a {
-    color:#666565
+    color: #666565;
 }
 
 .auction-text-container p span a:hover {
-    color:#8f8f8f
+    color: #8f8f8f;
 }
 
 .auction .cards {
@@ -242,7 +247,7 @@ body {
     justify-content: space-between;
     gap: 1rem;
     overflow-x: hidden;
-  }
+}
 
 .inner-card-container {
     display: grid;
@@ -251,12 +256,12 @@ body {
     grid-row-gap: 6px;
     padding: 1rem 1.5rem 1rem 1.5rem;
     align-items: center;
-    }
+}
 
-.card-series { 
+.card-series {
     grid-area: 1 / 1 / 2 / 2;
     text-align: left;
-    color:rgb(247, 132, 38);
+    color: rgb(247, 132, 38);
     font-size: 14px;
 }
 .card-current-bid {
@@ -288,27 +293,30 @@ body {
     grid-area: 3 / 2 / 4 / 3;
     text-align: right;
     color: #797979;
-}   
+}
 
-  .card-1, .card-2, .card-3, .card-4 {
-        width: 290px;
-        height: 25rem;
-        background: #d4d4d4;
-        border-radius: 1rem;
-  }
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    width: 290px;
+    height: 25rem;
+    background: #d4d4d4;
+    border-radius: 1rem;
+}
 
 /* Launch section */
 
-  .img-launch-container {
+.img-launch-container {
     width: 15%;
     max-width: 380px;
     margin-left: auto;
     margin-right: 7rem;
     padding-bottom: 100px;
     margin-top: 11.5rem;
-  }
+}
 
-  .launch-container {
+.launch-container {
     display: flex;
     position: relative;
     align-items: center;
@@ -324,12 +332,11 @@ body {
     position: absolute;
     max-width: 14rem;
     top: 3rem;
-    
 }
 
 .launch-content h4 {
     color: #ff4f7e;
-    font-weight:600;
+    font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
 }
@@ -347,7 +354,7 @@ body {
 }
 
 .separator2 {
-    height:1px;
+    height: 1px;
     background-color: #797979;
     opacity: 50%;
     margin-top: -6.5rem;
@@ -401,7 +408,7 @@ body {
 
 .footer-social-logos * {
     vertical-align: middle;
-    color: #797979; 
+    color: #797979;
     margin-right: 12px;
 }
 
@@ -410,16 +417,15 @@ body {
 }
 
 .footer-social-logos *:hover {
-    color: #969696;  
+    color: #969696;
     cursor: pointer;
 }
 
 .footer-flex {
-
-    display: flex; 
-    /* flex-flow: column nowrap; */ 
-    flex-direction: column; 
-    flex-wrap: nowrap; 
+    display: flex;
+    /* flex-flow: column nowrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
     height: 100%;
     gap: 1rem;
     justify-content: center;
@@ -441,23 +447,21 @@ body {
 /* Other/test styles */
 
 .separator {
-    height:1px;
+    height: 1px;
     background-color: #797979;
     opacity: 50%;
     margin-top: 2rem;
 }
 
 .separator2 {
-    height:1px;
+    height: 1px;
     background-color: #797979;
     opacity: 50%;
     margin-top: -6.5rem;
     margin-bottom: 3rem;
 }
 
-
 @media screen and (min-width: 428px) {
-
     .container {
         min-width: 428px;
         max-width: none;
@@ -494,7 +498,7 @@ body {
 
     nav li {
         margin-right: 8px;
-        white-space:nowrap;
+        white-space: nowrap;
     }
 
     nav li:last-child {
@@ -530,7 +534,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
     nav ul {
         font-size: 1rem;
     }
@@ -567,9 +570,8 @@ body {
     }
 
     .hero-img-container img {
-        width: 28rem
+        width: 28rem;
     }
-    
 
     .hero-content h1 {
         padding-bottom: 32px;
@@ -599,12 +601,12 @@ body {
         flex-wrap: nowrap;
         align-content: space-between;
     }
-        
+
     .companies {
         min-width: 320px;
         max-width: none;
-    }  
-            
+    }
+
     .companies-container img {
         padding: 1%;
     }
@@ -619,12 +621,14 @@ body {
         margin-bottom: 3rem;
     }
 
-    .card-1, .card-2, .card-3, .card-4 {
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
         display: block;
         width: 25%;
         height: 100%;
         border-radius: 1rem;
-
     }
 
     .card-1 img {
@@ -659,7 +663,8 @@ body {
     }
 
     .card-series {
-        font-size: 10px;vertical-align: middle;
+        font-size: 10px;
+        vertical-align: middle;
     }
     .card-current-bid {
         font-size: 10px;
@@ -843,7 +848,7 @@ body {
         vertical-align: middle;
     }
     .card-price img {
-    vertical-align: middle;
+        vertical-align: middle;
     }
     .card-number {
         font-size: 18px;
@@ -862,7 +867,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1152px){
+@media screen and (min-width: 1152px) {
     .inner-card-container {
         padding: 1.5rem 1rem 1.5rem 1rem;
     }
